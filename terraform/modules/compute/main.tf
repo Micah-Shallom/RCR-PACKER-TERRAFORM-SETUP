@@ -10,14 +10,14 @@ resource "aws_instance" "Jenkins" {
  tags = merge(
     var.tags,
     {
-      Name = "ACS-Jenkins"
+      Name = "RCR-Jenkins"
     },
   )
 }
 
 
 #create instance for sonbarqube
-resource "aws_instance" "sonbarqube" {
+resource "aws_instance" "sonarqube" {
   ami                         = var.ami-sonar
   instance_type               = "t2.medium"
   subnet_id                   = var.subnets-compute
@@ -29,7 +29,7 @@ resource "aws_instance" "sonbarqube" {
    tags = merge(
     var.tags,
     {
-      Name = "ACS-sonbarqube"
+      Name = "RCR-sonarqube"
     },
   )
 }
@@ -47,7 +47,7 @@ resource "aws_instance" "artifactory" {
   tags = merge(
     var.tags,
     {
-      Name = "ACS-artifactory"
+      Name = "RCR-artifactory"
     },
   )
 }
