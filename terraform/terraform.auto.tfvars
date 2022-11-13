@@ -1,5 +1,13 @@
 region = "us-east-1"
 
+ami-web = "ami-0a986b7b72d9600dd"
+
+ami-bastion = "ami-073dcfbbdf456422b"
+
+ami-nginx = "ami-01fee08ef8e0e3e45"
+
+ami-sonar = "ami-0cc2b867d34e24f39"
+
 ami = "ami-0149b2da6ceec4bb0"
 
 vpc_cidr = "172.16.0.0/16"

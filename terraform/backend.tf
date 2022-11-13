@@ -14,6 +14,16 @@
 #   }
 # }
 
+terraform {
+  backend "remote" {
+    organization = "RCR-mshallom"
+
+    workspaces {
+      name = "RCR-PACKER-TERRAFORM-SETUP"
+    }
+  }
+}
+
 # resource "aws_dynamodb_table" "terraform_locks" {
 #   name         = "terraform-locks"
 #   billing_mode = "PAY_PER_REQUEST"

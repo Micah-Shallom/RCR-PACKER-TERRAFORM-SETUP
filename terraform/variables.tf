@@ -40,6 +40,22 @@ variable "ami" {
   type    = string
   default = ""
 }
+variable "ami-web" {
+  type    = string
+  default = ""
+}
+variable "ami-bastion" {
+  type    = string
+  default = ""
+}
+variable "ami-nginx" {
+  type    = string
+  default = ""
+}
+variable "ami-sonar" {
+  type    = string
+  default = ""
+}
 
 variable "account_no" {
   type = number
