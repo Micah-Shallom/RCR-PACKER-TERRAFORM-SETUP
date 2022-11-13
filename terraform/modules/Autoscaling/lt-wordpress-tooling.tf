@@ -25,7 +25,7 @@ resource "aws_launch_template" "wordpress-launch-template" {
     tags = merge(
       var.tags,
       {
-        Name = "RCR-wordpress"
+        Name = "wordpress-launch-template"
       },
     )
 
@@ -60,7 +60,7 @@ resource "aws_launch_template" "tooling-launch-template" {
     tags = merge(
       var.tags,
       {
-        Name = "RCR-tooling"
+        Name = "tooling-launch-template"
       },
     )
 
