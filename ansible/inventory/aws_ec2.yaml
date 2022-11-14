@@ -16,9 +16,9 @@ filters:
     - RCR-nginx
     - RCR-tooling
     - RCR-wordpress
-    - RCR-sonarqube
-    - RCR-artifactory
-    - RCR-Jenkins
+    # - RCR-sonarqube
+    # - RCR-artifactory
+    # - RCR-Jenkins
   instance-state-name : running
   
 hostnames:
