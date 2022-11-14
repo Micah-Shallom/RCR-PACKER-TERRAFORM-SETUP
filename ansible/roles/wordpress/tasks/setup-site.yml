@@ -2,7 +2,6 @@
   ansible.builtin.get_url:
     url: http://wordpress.org/latest.tar.gz
     dest: /home/ec2-user/latest.tar.gz
-    
 
 - name: unzip the compressed file
   ansible.builtin.unarchive:
@@ -28,7 +27,6 @@
   ansible.builtin.file:
     path: /var/www/html/healthstatus
     state: touch
-
 
 - name: Allow apache to modify /var/www/html
   community.general.sefcontext:
